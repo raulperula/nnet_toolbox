@@ -1,0 +1,19 @@
+\chapter{Objetivos}
+	
+	En el presente capítulo se expondrán todos los objetivos funcionales que se pretenden alcanzar con el desarrollo de este proyecto.\\
+	
+	El propósito de este proyecto es desarrollar un algoritmo de regresión ordinal basado en redes neuronales, mediante la utilización de una función de \textit{ranking} $f(x)$ formada por la suma ponderada de un conjunto de funciones de base (incluyendo funciones de tipo sigmoide, unidad producto, funciones de base radial, etc.).\\
+
+	En concreto, los objetivos perseguidos son los siguientes:
+
+	\begin{enumerate}
+		\item Realizar un estudio teórico sobre las temáticas relacionadas con el proyecto, incluyendo la regresión ordinal, la clasificación tradicional y los algoritmos de descenso por gradiente.
+		\item Implementar el algoritmo iRPROP+ (el cuál es una mejora del algoritmo RPROP), utilizando como base la implementación incluida en el paquete de redes neuronales (\verb'nnet') del software Matlab \cite{Matlab}.
+		\item Desarrollar un algoritmo de regresión ordinal basado en Redes Neuronales. Este objetivo engloba varios sub-objetivos:
+		\begin{enumerate}
+	  		\item Modificación del modelo funcional estándar de redes neuronales para clasificación. Esto supone considerar una red neuronal de una sola neurona en capa de salida y aplicar una transformación de la salida que aproxime un valor de probabilidad de pertenencia a cada una de las clases. Esta transformación la basaremos en la Regresión Logística Ordinal estándar (\textit{Proportional Odd Model}, \cite{Mcc80}).
+			\item Modificación de la función de error utilizada como base en el algoritmo iRProp+.
+			\item Evaluar el algoritmo en un conjunto de bases de datos de prueba, comparar los resultados con los obtenidos por otros clasificadores ordinales y reformular la hipótesis y/o el algoritmo inicial, intentado conseguir (siempre que fuese posible) unos resultados competitivos.
+		\end{enumerate}
+		\item Implementar una interfaz gráfica que facilite la utilización del algoritmo implementado.
+\end{enumerate}

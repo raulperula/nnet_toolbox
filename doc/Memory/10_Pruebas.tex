@@ -1,0 +1,94 @@
+\chapter{Pruebas}
+
+	La fase de pruebas es una parte fundamental en el desarrollo de cualquier sistema ya que determinará la calidad del mismo. A lo largo del desarrollo del sistema se realizan un conjunto de controles que determina de esta forma la calidad del mismo y para poder detectar errores cuanto antes, ya que a medida que el desarrollo avanza, cualquier corrección del sistema puede ser mucho más costosa de solucionar tanto en tiempo como en esfuerzo.\\
+	
+	Si se considera el sistema como un conjunto de componentes que interactúan entre sí, esto da lugar a la necesidad de probar estos componentes por separado para demostrar que cada uno de ellos funciona correctamente y que produce unos resultados satisfactorios, de esta forma es necesario incluir pruebas de los componentes antes de realizar las pruebas de todo el conjunto.\\
+	
+	Con muchas de estas pruebas no sólo se busca un correcto funcionamiento, sino también óptimo, ya que es necesario el entrenamiento de diferentes parámetros que con determinados valores pueden dar resultados buenos pero inferiores al máximo esperado, de esta forma es necesario realizar pruebas que permitan optimizar los valores de entrada del sistema.\\
+	
+	Se va a mostrar una introducción teórica sobre el fundamento y finalidad de las pruebas y a continuación el catálogo de pruebas.\\
+	
+	Las características fundamentales de las pruebas se pueden resumir en los siguientes puntos:
+	
+	\begin{enumerate}
+		\item La prueba es un proceso de ejecución de un programa con la intención de descubrir un error.
+		\item Un buen caso de prueba es aquel que tiene una alta probabilidad de mostrar un error no descubierto hasta entonces.
+		\item La filosofía más adecuada para las pruebas consiste en planificarlas y diseñarlas de la forma más sistemática posible para poder detectar el máximo número y variedad de defectos con el mínimo consumo de tiempo y esfuerzo.
+	\end{enumerate}
+
+	\section{Estrategia de pruebas}
+	
+		Hay que intentar diseñar un conjunto de casos de prueba que permita conseguir una confianza aceptable que encuentre los defectos existentes y a la vez que los resultados obtenidos seas lo suficientemente buenos con respecto a un margen establecido teniendo que optimizar en caso contrario.\\
+		
+		Como entorno de pruebas para este sistema se han desarrollado una serie de pruebas denominadas \textit{pruebas de caja negra} y \textit{pruebas de caja blanca}. Los resultados de estas pruebas han llevado a la detección de errores que se han ido solucionando volviendo a fases anteriores y volviendo a realizar seguidamente las pruebas hasta obtener un resultado satisfactorio.\\
+		
+		El procedimiento utilizado para eliminar errores es, por tanto, la \textit{vuelta atrás}, localizando el síntoma que indujo a pensar que había un error e ir hacia atrás hasta llegar a la causa del mismo. A su vez, el conjunto de casos de prueba realizados se pueden clasificar en 4 tipos que se irán explicando en las siguientes subsecciones.
+		
+		\subsection{Pruebas Unitarias}
+
+			El conjunto de pruebas que forman esta parte se trata de un conjunto de pruebas unitarias de los componentes del sistema y, por lo tanto, la verificación de la menor unidad del diseño del software, el módulo. Se considera como módulo a un bloque básico de construcción de programas, una parte del código que implementa una función simple o un fragmento de código que se puede compilar y/o probar independientemente. Normalmente tienen una longitud menor de 500 líneas de código. Éste se compone de dos tipos de pruebas, como se ha comentado anteriormente, pruebas estructurales o \textit{pruebas de caja blanca} y pruebas funcionales o \textit{pruebas de caja negra}.\\
+			
+			Las pruebas de caja blanca están relacionadas con la fase de diseño, así, se intenta mostrar la validación de los componentes que conforman el sistema por lo que es necesario probar la funcionalidad de cada uno de los componentes por separado demostrando que cumplen con su tarea de forma óptima y no causan ningún error.\\
+			
+			Básicamente, se intenta probar cada una de las líneas de código que conforman el sistema, normalmente las combinaciones que se pueden llevar a cabo de la ejecución del sistema son muy numerosas debido a la existencia de bucles, sentencias condicionales, etc. Sin embargo, es necesario probar que cada una de esas sentencias realiza una acción de forma correcta, es decir, será necesario realizar una cobertura de sentencias que demuestre que ese trozo de código se ejecuta correctamente.\\
+			
+			Los resultados de estas pruebas han llevado a la detección de errores solucionados en la fase de codificación, buscando la causa a partir de los síntomas que delataban el error y de este modo, realizando las oportunas acciones para corregirlos.\\
+			
+			De esta forma y a medida que se iban implementando las distintas funciones y módulos de ejecución del sistema, se iba comprobando su eficiencia y estructura para comprobar que no se producía ningún tipo de error.\\
+			
+			Estas pruebas se han realizado de la siguiente forma:
+			
+			\begin{enumerate}
+				\item Se ha comprobado, para cada módulo, si se almacenaba y trataba correctamente toda la información contenida en las estructuras internas de datos.
+				\item Se ha comprobado que el flujo de información se realiza correctamente para todas las ramas posibles del módulo.
+				\item Se han realizado pruebas en los límites de los bucles.
+				\item Se ha comprobado la ejecución de cada una de las sentencias que forman parte del módulo, analizando la ejecución completa de cada módulo.
+			\end{enumerate}
+			
+			Las pruebas de caja negra se han desarrollado de forma paralela y posterior a la composición de todos los componentes que forman parte del sistema. Dichas pruebas se centran en las acciones visibles al usuario y salidas reconocibles desde el sistema en lo que se espera de un módulo. Por ello, se denominan pruebas funcionales, limitándose a suministrar datos como entrada y estudiar la salida sin preocuparse de lo que pueda estar haciendo el módulo por dentro.\\
+			
+			Las pruebas de caja negra se apoyan en la especificación del sistema. Así, para cada módulo:
+			
+			\begin{enumerate}
+				\item Se ha realizado un estudio de los posibles valores correctos en los parámetros de tipo dato, centrándose en las condiciones límite.
+				\item Se ha analizado qué valores se esperaban como resultado del módulo y en qué condiciones habían de darse, se proporcionaron datos de entrada a los algoritmos y se comprobó que la salida era la esperada.
+				\item Para realizar todas estas pruebas se han utilizado pequeños programas de prueba en los que se cargaban las funciones o los módulos con los valores necesarios para cubrir el caso de prueba a realizar, se realizaba el método y se mostraban los resultados.
+			\end{enumerate}
+		
+		\subsection{Pruebas de Integración}
+
+			De igual modo, para comprobar que la estructura del sistema y el control del mismo se ejecutan de forma correcta, es necesario llevar a cabo un conjunto de pruebas de integración que permitan comprobar que el flujo de datos entre módulos es correcto.\\
+			
+			Pruebas integrales o pruebas de integración son aquellas que se realizan en el ámbito del desarrollo del software una vez que se han aprobado las pruebas unitarias de dichos módulos. Únicamente se refieren a la prueba o pruebas de todos los elementos unitarios que componen un proceso hecha en conjunto.\\
+			
+			Las pruebas de integración se han realizado de forma ascendente, es decir, se trata mediante un proceso incremental en el cual se comprueba el siguiente módulo con el conjunto de módulos que ya han sido probados, este proceso continua hasta llegar a probar el sistema completo. De esta forma se comienza por los módulos de más bajo nivel hasta alcanzar el sistema al completo.\\
+			
+			De este modo, estas pruebas se han realizado de la siguiente forma:
+			
+			\begin{enumerate}
+				\item Se ha comprobado en cada paso incremental que la interacción entre el módulo añadido con el conjunto de módulos ya probados funciona correctamente.
+				\item Se ha comprobado que el flujo de información se realiza correctamente entre los diferentes módulos.
+				\item Se ha comprobado que la ejecución de todas las ramas posibles del conjunto de módulos del sistema hasta que el punto alcanzado sea correcto.
+			\end{enumerate}
+			
+			Otro apartado importante a puntualizar es la integración del sistema en Matlab como parte del toolbox nnet, así, fue necesario realizar una serie de pruebas que demostraran que el sistema podría funcionar perfectamente en concordancia con el toolbox original, administrando los valores de entrada dados por éste y proporcionándole posteriormente los resultados como valores de salida.
+		
+		\subsection{Pruebas del Sistema}
+		
+			Tras la finalización de las pruebas anteriores se obtendrá un sistema completo funcionalmente correcto y del que han sido solventados todos los posibles errores que hayan ido surgiendo gracias a dichas pruebas, por lo que se puede comenzar una serie final de pruebas del software para verificar que se han integrado adecuadamente todos los elementos del sistema y que se realizan las funciones apropiadas.\\
+			
+			La fase de pruebas del sistema tiene como objetivo verificar el sistema software para comprobar si éste cumple los requisitos. Dentro de esta fase se pueden desarrollar varios tipos distintos de pruebas en función de los objetivos. Algunos tipos son, pruebas funcionales, pruebas de usabilidad, pruebas de rendimiento, pruebas de seguridad, etc.\\
+			
+			También se ha tenido muy en cuenta la velocidad de ejecución de los algoritmos desarrollados, ya que en este tipo de sistemas característicos por una aplicación iterativa de cálculos, pequeños detalles de implementación pueden influir fuertemente en el rendimiento final. Se ha preferido una mayor velocidad de cómputo  frente a la restricción del consumo de memoria. A pesar de esto, se ha realizado un control del consumo de recursos del sistema aunque no muy exhaustivo.\\
+			
+			En este proyecto, estas pruebas se realizarán durante las pruebas de experimentación que se pueden encontrar en el siguiente capítulo. De esta forma, se cumple con el doble objetivo de ejercitar a fondo el sistema cumpliendo con las pruebas del sistema y de comprobar si la utilización de los modelos teóricos propuestos ha merecido la pena en comparación con los resultados de los que se dispone en otros medios.
+		
+		\subsection{Pruebas de Aceptación}
+		
+			Estas pruebas las realiza el usuario final. Son básicamente pruebas funcionales sobre el sistema completado y buscan una cobertura de la especificación del sistema. Estas pruebas no se realizan durante el desarrollo pues no tendría mucho sentido de cara al usuario, sino una vez pasadas todas las pruebas de integración.\\
+			
+			La experiencia muestra que aun después del más cuidadoso proceso de pruebas por parte del desarrollador quedan una serie de errores que sólo aparecen cuando el usuario se pone a usarlo.\\
+			
+			Este tipo de pruebas se han desarrollado de dos formas, las primeras pruebas del proceso consisten en invitar al usuario a que venga al entorno de desarrollo a probar el sistema. Se trabaja en un entorno controlado y el usuario tiene siempre a un experto a mano para ayudarle a usar el sistema y para analizar los resultados.\\
+			
+			Las siguiente pruebas se desarrollan en el entorno del usuario, buscando un entorno que esté fuera del control. Ahí, el usuario se queda a solas con el sistema y trata de encontrarle fallos (reales o en su opinión) de los que informa al desarrollador. En este proceso, el usuario es el único con posibilidad de encontrar cualquier error que se le haya pasado al desarrollador o de buscar una mayor comodidad o eficiencia del sistema, éste es un proceso que puede llevar semanas o incluso meses dependiendo de la complejidad del sistema y del usuario final.

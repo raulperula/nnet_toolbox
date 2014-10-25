@@ -1,0 +1,86 @@
+function [NHO,E] = kfold(trainInputs,trainTargets,NH,kFold,numIter)
+%KFOLD Do k-Fold cross-validation.
+%
+%  Syntax
+%
+%    kfold(trainInputs,trainTargets,NHmax,kFold,numIter)
+%
+%  Description
+%
+%    KFOLD(trainInputs,trainTargets,NHmax,kFold,numIter) takes,
+%      trainInputs  - Train inputs of a dataset.
+%      trainTargets - Train targets of a dataset.
+%      NH           - Vector of hidden nodes.
+%      kFold        - Number of folds.
+%      numIter      - Mean number of calculations.
+%    and returns:
+%	   NHO          - Number of optimal hidden nodes.
+%      E            - Mean error.
+%
+%  Examples
+% 
+%
+%  See also transdata, newoff, simonet, maecalc.
+
+% Raúl Pérula Martínez, 07-2011
+% Copyright 2011 Universidad de Córdoba
+% $Revision: 1.0 $
+
+
+%% ERROR CHECKING
+if (nargin < 2), error('NNET:Arguments','Not enough arguments.'),end
+
+%% DEFAULTS
+if (nargin < 3), NH = 1:5:51; end
+if (nargin < 4), kFold = 10; end
+if (nargin < 5), numIter = 3; end
+
+%% establecimiento de las clases
+classes = getstra(trainTargets);
+
+%% K-FOLD CALCULATING
+
+% geting indices from stratified set of targets
+indices = crossvalind('Kfold',classes,kFold);
+
+v = zeros(length(NH),1);
+
+for i=NH
+	aux = 0;
+	for k=1:kFold
+		% calculating and dividing folds
+		testing = (indices == k)';
+		training = ~testing;
+        
+		% Training set
+		trainX = trainInputs(:,training);
+		trainY = trainTargets(:,training);
+		trainYNew = transdata(trainY);
+
+		% Test set
+		testX = trainInputs(:,testing);
+		testY = trainTargets(:,testing);
+	
+		for j=1:numIter
+			% creating the neural network
+			net = newoff(trainX,trainY,i,'logsig');
+			net.trainParam.showWindow = false; % don't show training interface
+
+			% training the net
+			net = train(net,trainX,trainYNew(1:(size(trainY,1)-1),:));
+
+			% simulating the net to obtain the outputs (test set)
+			testOutputs = osim(net,testX);
+
+			% calculating confussion matrix and mae
+			[c,cm,ind,per] = confusion(testY,testOutputs);
+			aux = aux+maecalc(cm, size(testX,2));
+		end
+	end
+	% obtaining mean error
+	v(NH == i) = aux/(kFold*numIter);
+end
+
+%% return values
+NHO = NH(v == min(v));
+E = min(v);

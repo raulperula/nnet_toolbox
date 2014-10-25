@@ -1,0 +1,104 @@
+\chapter{Definición del problema}
+	
+	En este apartado se tratará de mostrar detalladamente el problema al que se pretende dar solución con la realización del proyecto. En su desarrollo se realizará una identificación de necesidades y establecimiento de objetivos del proceso general del proyecto. Para poder abordar este fin, el apartado se dividirá en la \textit{definición del problema real} (problema definido desde el punto de vista del usuario final) y la \textit{definición del problema técnico} (problema definido desde el punto de vista del ingeniero).
+	
+	\section{Definición del problema real}
+	
+		Las redes neuronales y en particular los algoritmos de regresión o clasificación ordinal se están utilizando cada vez más ya que ofrecen muy buenos resultados en problemas reales de esta tipología. Lo que se pretende realizar con este proyecto es implementar los algoritmos desarrollados teóricamente por los directores del proyecto y realizar una evaluación de los mismos en cuanto a eficiencia y eficacia.\\
+
+		La realización de este proyecto implica una alta complejidad y conlleva la realización del estudio completo de todo lo relacionado con redes neuronales computacionales, algoritmos de inteligencia artificial tanto de clasificación como de regresión, y dentro de éstos los relacionados con el tema de la ordinalidad en la variable dependiente asociada al clasificador. Obteniendo así un estudio completo de la resolución de problemas mediante algoritmos de regresión ordinal o también llamado clasificación ordinal realizados con redes neuronales.\\
+	
+	\section{Definición del problema técnico}
+		
+		Para llevar a cabo la identificación del problema técnico se empleará una técnica de ingeniería de las más utilizadas en proyectos de éste ámbito denominada PDS (Product Design Specification). Ésta técnica permite realizar un análisis de los principales condicionantes técnicos del problema mediante la respuesta de una serie de cuestiones básicas e indispensables.
+		
+		\subsection{Funcionamiento}
+		
+			Los algoritmos de regresión ordinal son un método matemático que modela la relación entre una variable dependiente Y en escala ordinal, y las variables independientes X. Desde la perspectiva de una escala ordinal, a las clases se le asignan números para indicar el grado relativo en la que los objetos poseen ciertas características.\\
+
+			Una regresión ordinal nos permite determinar si un objeto tiene más o menos cantidad de cierta característica que algún otro objeto. De manera que, una escala ordinal nos indica la posición relativa, pero no la magnitud de las referencias entre los objetos con respecto a la variable dependiente del problema.\\
+
+			En investigación de mercados las escalas ordinales se utilizan para medir las actitudes, opiniones, percepciones y preferencias relativas.
+		
+		\subsection{Entorno}
+		
+			El entorno se define como el conjunto de aspectos o propiedades que rodean al problema y que aun presentándose de manera externa al mismo, pueden influir en el planteamiento de una solución, puesto que pueden afectar al sistema software desarrollado para tal fin.\\
+
+			En el análisis del entorno del proyecto que se pretende desarrollar se tendrán en cuenta los siguiente puntos de vista: entorno de programación, entorno software, entorno hardware y entorno de usuario.\\
+
+			\begin{itemize}
+				\item \textbf{Entorno de programación:} la implementación del algoritmo que se pretende desarrollar en el presente proyecto se realizará haciendo uso del lenguaje propio que tiene el programa de desarrollo matemático Matlab, así como de su interfaz gráfica y su editor de textos. El motivo de su uso se detallará más adelante.
+				\item \textbf{Entorno software:} para el funcionamiento del algoritmo se hará uso de Matlab 2010a junto con el Toolbox propietario basado en el manejo y uso de redes neuronales, \textit{nnet}.
+				\item \textbf{Entorno hardware:} también conocido como entorno físico o de trabajo, hace referencia a las características del sistema informático en el que se ejecutará el algoritmo, así como el ambiente que lo rodea. El algoritmo y todas las pruebas de rendimiento se harán en un ordenador portátil personal, sin ningún requisito en especial.
+				\item \textbf{Entorno de usuario:} los usuarios que puedan utilizar el código desarrollado o que podrán entender los resultados obtenidos serán, por lo general, investigadores que tengan conocimiento en Redes Neuronales y del lenguaje de programación de Matlab. Por lo tanto, bajo este supuesto sólo serán necesarias ciertas nociones básicas sobre la temática para el entendimiento del proyecto en general.
+			\end{itemize}
+		
+		\subsection{Vida esperada}
+		
+			La vida esperada de un producto software puede definirse como el tiempo de vida estimado durante el cual puede realizarse una aplicación útil del mismo, en nuestro caso no es exactamente lo mismo ya que es una implementación que servirá para un conjunto específico de investigadores y no es un producto software como tal, de todos modos la definición es válida. Esta estimación es difícil de realizar al influir en la misma numerosos factores.\\
+
+			Al tratarse de un algoritmo basado en estudios de investigación, se estima que la vida esperada del mismo sea relativamente corta, pero teniendo en cuenta que, si el algoritmo se encuentra bien realizado, lo único que podrá tener es pequeñas modificaciones que lo mejoren en el sentido que sea. De todos modos, la implementación propuesta garantiza la escalabilidad del rendimiento del algoritmo. Por tanto, es lógico pensar que el presente proyecto pueda ser utilizado como punto de partida para trabajos posteriores.
+		
+		\subsection{Ciclo de mantenimiento}
+		
+			El ciclo de mantenimiento se identifica con el conjunto de modificaciones que será necesario realizar para que una determinada aplicación pueda hacer frente a diferentes circunstancias que puedan surgir o a nuevas exigencias procedentes del usuario final o del propio sistema.\\
+		
+			A medio plazo se puede apreciar la necesidad de realizar un mantenimiento, fruto del surgimiento de nuevas necesidades o modificaciones propuestas por el grupo de investigación AYRNA, el cual continuará realizando futuros proyectos en este ámbito.
+		
+		\subsection{Competencia}
+		
+			Puesto que este algoritmo tiene fines investigadores ya que se basa en un modelo teórico desarrollado por el grupo de investigación, no existe en la actualidad ninguno igual y de ahí la necesidad de su implementación para comprobar su correcto funcionamiento y eficacia.
+		
+		\subsection{Aspecto externo}
+		
+			La apariencia externa de una aplicación hace referencia no solamente al aspecto visual que tiene el usuario de la misma durante su ejecución, sino que también es necesario considerar la presentación física del sistema, los mecanismos de instalación proporcionados junto al mismo y los manuales que pueden acompañarlo.\\
+		
+			Por todo esto, se ha decidido añadir el algoritmo al Toolbox del software de desarrollo matemático e investigador de Matlab, que ofrece una integración completa en un software de gran prestigio y usable en el ámbito científico y de investigación sobretodo cuando es necesario utilizar cálculos matriciales.\\
+		
+			Para el almacenamiento de todo lo relacionado con el proyecto se hará uso del CD-ROM debido a la portabilidad, bajo coste, capacidad de almacenamiento, resistencia, seguridad y su uso generalizado entre los usuarios.\\
+		
+			La implementación del algoritmo irá acompañada de un manual de usuario que se podrá consultar desde la propia ayuda de la aplicación de Matlab y donde se explicará, según el formato que proporciona Matlab en sus códigos y ayudas, el manejo del algoritmo de la forma más sencilla, para que su lectura sea más agradable y productiva.\\
+
+			Tanto el manual de usuario, el manual técnico y el manual de código se incluirán impresos y en formato PDF (Portable Document Format).
+		
+		\subsection{Estandarización}
+		
+			Con referencia a la estandarización en la programación, se procurará seguir los estándares más comunes aprendidos en la carrera tales como, correcta indentación de código, uso generalizado y especializado de comentarios de código, modularización del código y de las funciones, etc.
+		
+		\subsection{Calidad y fiabilidad}
+		
+			La calidad y la fiabilidad son dos factores muy importantes que hay que tener en cuenta en el desarrollo de cualquier aplicación, puesto que es necesario proporcionar al usuario final garantías que le permitan depositar su confianza en el producto, ya que, en caso contrario, podrían surgir reacciones adversas a su utilización.\\
+
+			La calidad de cualquier aplicación se asocia al hecho de que durante su ejecución no se produzcan errores que induzcan a su terminación irregular. La fiabilidad, por su parte, hace referencia a la capacidad del sistema para proporcionar datos reales, asegurando que las acciones realizadas durante el procesamiento resulten correctas y se lleven a cabo de manera óptima.\\
+
+			De este modo, la calidad del proyecto será directamente evaluada por el alumno proyectista junto con la colaboración de los directores del proyecto. A la finalización del mismo, será evaluada por el tribunal del proyecto.\\
+
+			La fiabilidad será un factor importante, ya que los datos o informes que obtiene el usuario deberán ser totalmente correctos, por lo que se realizarán pruebas que intenten minimizar el número de errores producidos. Destacar que, a priori, los únicos errores que se deberían cometer en el sistema serán aquellos derivados de un uso incorrecto del mismo.
+		
+		\subsection{Programación de tareas}
+		
+			La programación de tareas se define como el conjunto de etapas y actividades que constituyen el proceso de desarrollo de una aplicación. A continuación se describirán las diferentes etapas en las que se puede organizar el proceso de desarrollo del algoritmo que se ha desarrollado:
+		
+			\begin{enumerate}
+				\item Estudio técnico de conceptos y conocimientos generales sobre Redes Neuronales, Algoritmos de Regresión Ordinal y Nominal.
+				\item Estudio teórico del modelo de programación en Matlab.
+				\item Estudio de antecedentes sobre Algoritmos de Regresión Ordinal en Redes Neuronales.
+				\item Implementación del método desarrollado por los directores de proyecto en Matlab.
+				\item Realización de pruebas para la comprobación de la eficacia del algoritmo implementado.
+				\item Análisis de los resultados de las pruebas.
+				\item Obtención de conclusiones y presentación de las futuras mejoras.
+			\end{enumerate}
+			
+			En todo momento habrá una tarea que se dará durante todo el proyecto que es la realización de la documentación del proyecto.
+		
+		\subsection{Pruebas}
+		
+			Las pruebas se definen como el conjunto de acciones y datos que son utilizados para poder depurar la aplicación desarrollada, además del medio para demostrar la funcionalidad de la misma y su utilidad. Durante la implementación, el algoritmo junto con el software en general del Toolbox \textit{nnet} de Matlab será sometido a diversas pruebas para garantizar la corrección del software. En la fase de experimentación y resultados se someterá al algoritmo a pruebas de ejecución para estudiar su funcionamiento de acuerdo a los objetivos del proyecto.
+		
+		\subsection{Seguridad}
+		
+			El algoritmo a desarrollar será utilizado y distribuido por el grupo AYRNA de acuerdo a sus consideraciones, por lo que el desarrollo de mecanismos de seguridad contra copias o distribuciones no permitidas no tendrá sentido.
+		
+		\subsection{Licencia}
+
+			Aunque el algoritmo está desarrollado para el software matemático Matlab no quiere decir que éste vaya a tener licencia privativa como el programa tiene, sino que se encontrará bajo una licencia libre GNU General Public License (GPL), por lo que podrá ser usado, modificado y distribuido libremente por cualquier usuario.

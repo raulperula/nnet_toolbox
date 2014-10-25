@@ -1,0 +1,14 @@
+VPN uco
+
+maquinas
+desde 192.168.117.142 hasta 192.168.117.149
+utilizar preferiblemente las ultimas
+
+comandos
+
+ssh rperula@192.168.117.148
+
+ls -la /tmp
+ps ax | grep MATLAB
+csh metarunner.sh 
+top //ver pila procesos

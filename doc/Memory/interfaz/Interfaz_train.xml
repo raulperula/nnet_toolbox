@@ -1,0 +1,472 @@
+<mockup version="1.0" skin="sketch" measuredW="858" measuredH="632" mockupW="800" mockupH="600">
+  <controls>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::PointyButton" x="577" y="545" w="84" h="-1" measuredW="55" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Button" x="690" y="545" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Title" x="140" y="85" w="-1" h="-1" measuredW="193" measuredH="44" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Select%20Data</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::Image" x="106" y="89" w="34" h="35" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::SubTitle" x="211" y="82" w="-1" h="-1" measuredW="494" measuredH="35" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Wellcome%20to%20Ordinal%20Neural%20Network%20Tool</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::PointyButton" x="577" y="587" w="84" h="-1" measuredW="55" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Button" x="690" y="587" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Image" x="90" y="74" w="50" h="50" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>uco</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Image" x="763" y="74" w="50" h="50" measuredW="77" measuredH="79" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>inf</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::FieldSet" x="90" y="144" w="355" h="420" measuredW="200" measuredH="170" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Introduction</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::FieldSet" x="458" y="144" w="355" h="420" measuredW="200" measuredH="170" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ordinal%20Neural%20Network</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::PointyButton" x="614" y="586" w="84" h="-1" measuredW="55" measuredH="27" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::Button" x="727" y="586" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Title" x="140" y="85" w="-1" h="-1" measuredW="367" measuredH="44" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Network%20Configuration</text>
+      </controlProperties>
+    </control>
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::Image" x="106" y="89" w="34" h="35" measuredW="77" measuredH="79" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::FieldSet" x="109" y="157" w="336" h="349" measuredW="200" measuredH="170" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Parameters</text>
+      </controlProperties>
+    </control>
+    <control controlID="89" controlTypeID="com.balsamiq.mockups::FieldSet" x="470" y="157" w="330" h="349" measuredW="200" measuredH="170" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Information</text>
+      </controlProperties>
+    </control>
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::ComboBox" x="324" y="191" w="78" h="-1" measuredW="59" measuredH="50" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>up</state>
+        <text>Yes%0ANo</text>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::Label" x="124" y="191" w="-1" h="-1" measuredW="47" measuredH="23" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>k-fold%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::Label" x="124" y="302" w="-1" h="-1" measuredW="63" measuredH="23" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Neurons%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Label" x="124" y="383" w="-1" h="-1" measuredW="119" measuredH="23" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Transfer%20Function%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::ComboBox" x="324" y="383" w="-1" h="-1" measuredW="78" measuredH="50" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>tansig%0Alogsig</text>
+      </controlProperties>
+    </control>
+    <control controlID="97" controlTypeID="com.balsamiq.mockups::Label" x="124" y="256" w="306" h="46" measuredW="377" measuredH="23" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>If%20no%20selected%20k-fold%2C%20put%20number%20of%20neurons%20in%20hidde%20layer%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="98" controlTypeID="com.balsamiq.mockups::TextInput" x="324" y="302" w="78" h="-1" measuredW="29" measuredH="27" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>20</text>
+      </controlProperties>
+    </control>
+    <control controlID="99" controlTypeID="com.balsamiq.mockups::PointyButton" x="507" y="585" w="84" h="-1" measuredW="57" measuredH="27" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <text>Back</text>
+      </controlProperties>
+    </control>
+    <control controlID="100" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::PointyButton" x="577" y="545" w="84" h="-1" measuredW="55" measuredH="27" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="102" controlTypeID="com.balsamiq.mockups::Button" x="690" y="545" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="103" controlTypeID="com.balsamiq.mockups::Title" x="140" y="85" w="-1" h="-1" measuredW="193" measuredH="44" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Select%20Data</text>
+      </controlProperties>
+    </control>
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::Image" x="106" y="89" w="34" h="35" measuredW="77" measuredH="79" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="106" controlTypeID="com.balsamiq.mockups::SubTitle" x="211" y="82" w="-1" h="-1" measuredW="494" measuredH="35" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Wellcome%20to%20Ordinal%20Neural%20Network%20Tool</text>
+      </controlProperties>
+    </control>
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::PointyButton" x="577" y="587" w="84" h="-1" measuredW="55" measuredH="27" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Button" x="690" y="587" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Image" x="90" y="74" w="50" h="50" measuredW="77" measuredH="79" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>uco</text>
+      </controlProperties>
+    </control>
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::Image" x="763" y="74" w="50" h="50" measuredW="77" measuredH="79" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>inf</text>
+      </controlProperties>
+    </control>
+    <control controlID="111" controlTypeID="com.balsamiq.mockups::FieldSet" x="90" y="144" w="355" h="420" measuredW="200" measuredH="170" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Introduction</text>
+      </controlProperties>
+    </control>
+    <control controlID="112" controlTypeID="com.balsamiq.mockups::FieldSet" x="458" y="144" w="355" h="420" measuredW="200" measuredH="170" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ordinal%20Neural%20Network</text>
+      </controlProperties>
+    </control>
+    <control controlID="113" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::PointyButton" x="614" y="586" w="84" h="-1" measuredW="55" measuredH="27" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::Button" x="727" y="586" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::Title" x="140" y="85" w="-1" h="-1" measuredW="193" measuredH="44" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Select%20Data</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::Image" x="106" y="89" w="34" h="35" measuredW="77" measuredH="79" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::FieldSet" x="109" y="157" w="324" h="182" measuredW="200" measuredH="170" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Select%20Data</text>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::Button" x="348" y="212" w="-1" h="-1" measuredW="39" measuredH="28" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>...</text>
+      </controlProperties>
+    </control>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::Button" x="348" y="255" w="-1" h="-1" measuredW="39" measuredH="28" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>...</text>
+      </controlProperties>
+    </control>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::Label" x="140" y="214" w="-1" h="-1" measuredW="48" measuredH="23" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Inputs%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="122" controlTypeID="com.balsamiq.mockups::Label" x="140" y="257" w="-1" h="-1" measuredW="57" measuredH="23" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Targets%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="123" controlTypeID="com.balsamiq.mockups::ComboBox" x="226" y="215" w="107" h="-1" measuredW="32" measuredH="24" zOrder="51" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="124" controlTypeID="com.balsamiq.mockups::ComboBox" x="226" y="257" w="107" h="-1" measuredW="32" measuredH="24" zOrder="52" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="125" controlTypeID="com.balsamiq.mockups::FieldSet" x="470" y="157" w="330" h="349" measuredW="200" measuredH="170" zOrder="53" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Information</text>
+      </controlProperties>
+    </control>
+    <control controlID="126" controlTypeID="com.balsamiq.mockups::PointyButton" x="507" y="586" w="84" h="-1" measuredW="57" measuredH="27" zOrder="54" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <text>Back</text>
+      </controlProperties>
+    </control>
+    <control controlID="127" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="55" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="128" controlTypeID="com.balsamiq.mockups::PointyButton" x="577" y="545" w="84" h="-1" measuredW="55" measuredH="27" zOrder="56" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="129" controlTypeID="com.balsamiq.mockups::Button" x="690" y="545" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="57" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="130" controlTypeID="com.balsamiq.mockups::Title" x="140" y="85" w="-1" h="-1" measuredW="193" measuredH="44" zOrder="58" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Select%20Data</text>
+      </controlProperties>
+    </control>
+    <control controlID="131" controlTypeID="com.balsamiq.mockups::Image" x="106" y="89" w="34" h="35" measuredW="77" measuredH="79" zOrder="59" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="132" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="60" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="133" controlTypeID="com.balsamiq.mockups::SubTitle" x="211" y="82" w="-1" h="-1" measuredW="494" measuredH="35" zOrder="61" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Wellcome%20to%20Ordinal%20Neural%20Network%20Tool</text>
+      </controlProperties>
+    </control>
+    <control controlID="134" controlTypeID="com.balsamiq.mockups::PointyButton" x="577" y="587" w="84" h="-1" measuredW="55" measuredH="27" zOrder="62" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="135" controlTypeID="com.balsamiq.mockups::Button" x="690" y="587" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="63" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="136" controlTypeID="com.balsamiq.mockups::Image" x="90" y="74" w="50" h="50" measuredW="77" measuredH="79" zOrder="64" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>uco</text>
+      </controlProperties>
+    </control>
+    <control controlID="137" controlTypeID="com.balsamiq.mockups::Image" x="763" y="74" w="50" h="50" measuredW="77" measuredH="79" zOrder="65" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>inf</text>
+      </controlProperties>
+    </control>
+    <control controlID="138" controlTypeID="com.balsamiq.mockups::FieldSet" x="90" y="144" w="355" h="420" measuredW="200" measuredH="170" zOrder="66" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Introduction</text>
+      </controlProperties>
+    </control>
+    <control controlID="139" controlTypeID="com.balsamiq.mockups::FieldSet" x="458" y="144" w="355" h="420" measuredW="200" measuredH="170" zOrder="67" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ordinal%20Neural%20Network</text>
+      </controlProperties>
+    </control>
+    <control controlID="140" controlTypeID="com.balsamiq.mockups::TitleWindow" x="58" y="32" w="800" h="600" measuredW="450" measuredH="400" zOrder="68" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bottomheight>0</bottomheight>
+        <close>true</close>
+        <dragger>false</dragger>
+        <maximizeRestore>false</maximizeRestore>
+        <minimize>true</minimize>
+        <text>onntool</text>
+        <topheight>26</topheight>
+        <verticalScrollbar>false</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="141" controlTypeID="com.balsamiq.mockups::PointyButton" x="614" y="586" w="84" h="-1" measuredW="55" measuredH="27" zOrder="69" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Next</text>
+      </controlProperties>
+    </control>
+    <control controlID="142" controlTypeID="com.balsamiq.mockups::Button" x="727" y="586" w="-1" h="-1" measuredW="73" measuredH="28" zOrder="70" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Cancel</text>
+      </controlProperties>
+    </control>
+    <control controlID="143" controlTypeID="com.balsamiq.mockups::Title" x="140" y="85" w="-1" h="-1" measuredW="232" measuredH="44" zOrder="71" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Train%20Network</text>
+      </controlProperties>
+    </control>
+    <control controlID="144" controlTypeID="com.balsamiq.mockups::Image" x="106" y="89" w="34" h="35" measuredW="77" measuredH="79" zOrder="72" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="145" controlTypeID="com.balsamiq.mockups::FieldSet" x="109" y="157" w="691" h="155" measuredW="200" measuredH="170" zOrder="73" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Train</text>
+      </controlProperties>
+    </control>
+    <control controlID="146" controlTypeID="com.balsamiq.mockups::FieldSet" x="109" y="325" w="691" h="232" measuredW="200" measuredH="170" zOrder="74" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Results</text>
+      </controlProperties>
+    </control>
+    <control controlID="154" controlTypeID="com.balsamiq.mockups::PointyButton" x="507" y="585" w="84" h="-1" measuredW="57" measuredH="27" zOrder="75" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <text>Back</text>
+      </controlProperties>
+    </control>
+    <control controlID="156" controlTypeID="com.balsamiq.mockups::Label" x="124" y="190" w="654" h="24" measuredW="379" measuredH="23" zOrder="76" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Train%20an%20ordinal%20neural%20network%20with%20the%20ORNNet%20algorithm%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="157" controlTypeID="com.balsamiq.mockups::Button" x="421" y="234" w="-1" h="-1" measuredW="60" measuredH="28" zOrder="77" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Train</text>
+      </controlProperties>
+    </control>
+    <control controlID="158" controlTypeID="com.balsamiq.mockups::DataGrid" x="178" y="381" w="-1" h="-1" measuredW="545" measuredH="26" zOrder="78" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dataset%20Name%2C%20Mean%20CCR%2C%20SD%20CCR%2C%20Mean%20MAE%2C%20SD%20MAE%2C%20Mean%20NH%2C%20SD%20NH</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

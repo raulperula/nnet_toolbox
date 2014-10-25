@@ -1,0 +1,25 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Introducci\IeC {\'o}n}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Definici\IeC {\'o}n del problema}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Objetivos}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{Restricciones}{7}{0}{1}
+\beamer@sectionintoc {2}{Antecedentes}{8}{0}{2}
+\beamer@subsectionintoc {2}{1}{Redes neuronales}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Algoritmo iRPROP+}{10}{0}{2}
+\beamer@subsectionintoc {2}{3}{Medidas de rendimiento}{11}{0}{2}
+\beamer@sectionintoc {3}{An\IeC {\'a}lisis del Sistema}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{Algoritmo de Regresi\IeC {\'o}n Ordinal ORNNet}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Casos de Uso}{24}{0}{3}
+\beamer@subsectionintoc {3}{3}{An\IeC {\'a}lisis de la Interfaz}{26}{0}{3}
+\beamer@sectionintoc {4}{Dise\IeC {\~n}o}{27}{0}{4}
+\beamer@subsectionintoc {4}{1}{Tecnolog\IeC {\'\i }as}{28}{0}{4}
+\beamer@subsectionintoc {4}{2}{Arquitectura del Sistema}{29}{0}{4}
+\beamer@sectionintoc {5}{Interfaz Gr\IeC {\'a}fica}{31}{0}{5}
+\beamer@subsectionintoc {5}{1}{Ejemplo de ejecuci\IeC {\'o}n}{32}{0}{5}
+\beamer@sectionintoc {6}{Resultados}{33}{0}{6}
+\beamer@subsectionintoc {6}{1}{Resultados de las pruebas}{34}{0}{6}
+\beamer@sectionintoc {7}{Conclusiones}{36}{0}{7}
+\beamer@subsectionintoc {7}{1}{Conclusiones del Autor}{37}{0}{7}
+\beamer@subsectionintoc {7}{2}{Futuras Mejoras}{38}{0}{7}
+\beamer@sectionintoc {8}{Bibliograf\IeC {\'\i }a}{39}{0}{8}

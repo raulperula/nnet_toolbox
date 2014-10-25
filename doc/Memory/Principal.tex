@@ -1,0 +1,79 @@
+\documentclass[a4paper,11pt,twoside]{book}
+
+\include{Paquetes}
+
+\begin{document}
+	%RENOMBRAMIENTO
+	\renewcommand{\figurename}{Figura}
+	\renewcommand{\listfigurename}{Índice de ilustraciones}
+	\renewcommand{\tablename}{Tabla}
+	\renewcommand{\listtablename}{Índice de tablas}
+	\renewcommand{\appendixname}{Anexo}
+
+	%PORTADA
+	\input{Portada.tex}
+	
+	%PAGINA EN BLANCO
+	\newpage{\pagestyle{empty}\cleardoublepage}
+	
+	\input{Informes.tex}
+	
+	%PAGINA EN BLANCO
+	\newpage{\pagestyle{empty}\cleardoublepage}
+	
+	\input{Agradecimientos.tex}
+	
+	%PAGINA EN BLANCO
+	\newpage{\pagestyle{empty}\cleardoublepage}
+	
+	%NUMEROS DE PAGINA ROMANOS
+	\renewcommand{\thepage}{\roman{page}}
+	\setcounter{page}{1}
+	\setcounter{tocdepth}{4}
+	\setcounter{secnumdepth}{4}
+	
+	\pagestyle{headings}
+	
+	%INDICE GENERAL
+	\addcontentsline{toc}{chapter}{Índice general}
+	\tableofcontents
+	\clearpage
+	
+	%INDICE ILUSTRACIONES
+	\listoffigures
+	\addcontentsline{toc}{chapter}{Índice de ilustraciones}
+	\clearpage
+	
+	%INDICE TABLAS
+	\listoftables
+	\addcontentsline{toc}{chapter}{Índice de tablas}
+	\clearpage
+	
+	%NUMEROS DE PAGINA NORMAL
+	\renewcommand{\thepage}{\arabic{page}}
+	\setcounter{page}{1}
+	
+	%CONTENIDO CAPITULOS
+	\input{01_Introduccion.tex}
+	\input{02_DefinicionProblema.tex}
+	\input{03_Objetivos.tex}
+	\input{04_Antecedentes.tex}
+	\input{05_Restricciones.tex}
+	\input{06_Recursos.tex}
+	\input{07_EspecificacionSistema.tex}
+	\input{08_DisenoSistema.tex}
+	\input{09_Implementacion.tex}
+	\input{10_Pruebas.tex}
+	\input{11_Experimentacion.tex}
+	\input{12_Resultados.tex}
+	\input{13_ConclusionesFuturasMejoras.tex}
+	
+	%BIBLIOGRAFIA
+	\input{Bibliografia.tex}
+	
+	%APENDICES
+	\appendix
+	\input{AnexoManualUsuario.tex}
+	\input{AnexoManualCodigo.tex}
+	
+\end{document}

@@ -1,0 +1,113 @@
+%PAQUETES
+
+\usepackage[left=3.5cm,top=2.5cm,right=2cm,bottom=2.5cm]{geometry}
+\usepackage[pdftex]{graphicx}	% paquete para imagenes
+\usepackage{latexsym,amsmath,amssymb,amsfonts,cancel}
+\usepackage[activeacute,spanish]{babel} 	% paquete para tildes
+\usepackage[utf8]{inputenc}		% paquete para español
+\usepackage{multirow}
+%\usepackage{multicol}	% paquete para poder poner texto multicolumna
+%\usepackage{pdflscape}	% paquete para poder poner paginas horizontales
+\usepackage{rotating}	% paquete para rotaciones
+
+\usepackage{hyperref}	% paquete para hiperenlaces
+\hypersetup{
+	bookmarks=false,
+	pdfborder={0 0 0},
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	urlcolor=blue
+}
+
+\usepackage{csvtools}	% paquete para cargar datos desde fichero csv
+\usepackage{csvsort}	% paquete para ordenar tablas csv
+
+\usepackage{color, colortbl}
+\definecolor{light-gray}{gray}{0.95}
+\definecolor{myred}{RGB}{252,74,58}
+\definecolor{mygreen}{RGB}{111,255,79}
+
+\usepackage{listingsutf8}
+% CARACTERISTICAS DE LOS ARCHIVOS DE CODIGO FUENTE
+\lstset{
+	language=Matlab,
+	basicstyle=\small,
+	keywordstyle=\color[rgb]{0.5,0,0}\bfseries,
+	stringstyle=\color{blue},
+	commentstyle=\color[rgb]{0,0.5,0},
+	showstringspaces=false,
+	numbers=left,
+	numberstyle=\tiny,
+	%stepnumber=5,
+	numbersep=5pt,
+	backgroundcolor=\color{light-gray},
+	showspaces=false,
+	showtabs=false,
+	frame=single,
+	framexleftmargin=10mm,
+	frame=trBL,
+	rulesepcolor=\color{black},
+	tabsize=2,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=false,
+	inputencoding=utf8,
+	extendedchars=\true
+}
+
+\DeclareGraphicsExtensions{.bpm,.png,.pdf,.jpg}	% extensiones de imgenes
+
+% RENOMBRAMIENTO DE COMANDOS
+
+\newcommand{\sen}{\mathtop{\rm sen}\nolimits}
+\newcommand{\arcsen}{\mathtop{\rm arcsen}\nolimits}
+\newcommand{\arcsec}{\mathtop{\rm arcsec}\nolimits}
+
+\def\max{\mathtop{\mbox{\rm mx}}}
+\def\min{\mathtop{\mbox{\rm mn}}}
+
+%\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+%\let\endchangemargin=\endlist
+
+%Para personalizar el formato de los titulos
+\usepackage{pstcol}
+\makeatletter
+\def\LigneVerticale{\vrule height 4cm depth 2cm\hspace{0.1cm}\relax}
+\def\LignesVerticales{%
+  \let\LV\LigneVerticale\LV\LV\LV\LV\LV\LV\LV\LV\LV\LV}
+\def\GrosCarreAvecUnChiffre#1{%
+  \rlap{\vrule height 0.8cm width 1cm depth 0.2cm}%
+  \rlap{\hbox to 1cm{\hss\mbox{\white #1}\hss}}%
+  \vrule height 0pt width 1cm depth 0pt}
+\def\@makechapterhead#1{\hbox{%
+    \huge 
+    \LignesVerticales
+    \hspace{-0.5cm}%
+    \GrosCarreAvecUnChiffre{\thechapter}
+    \hspace{0.2cm}\hbox{#1}%
+}\par\vskip 2cm}
+\def\@makeschapterhead#1{\hbox{%
+    \huge 
+    \LignesVerticales
+    \hspace{0.5cm}
+    \hbox{#1}%
+}\par\vskip 2cm}
+
+%Para conseguir que en las páginas en blanco no ponga cabeceras
+\makeatletter
+\def\clearpage{%
+  \ifvmode
+    \ifnum \@dbltopnum =\m@ne
+      \ifdim \pagetotal <\topskip
+        \hbox{}
+      \fi
+    \fi
+  \fi
+  \newpage
+  \thispagestyle{empty}
+  \write\m@ne{}
+  \vbox{}
+  \penalty -\@Mi
+}
+\makeatother

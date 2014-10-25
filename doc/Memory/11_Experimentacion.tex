@@ -1,0 +1,105 @@
+\chapter{Experimentación}
+	
+	El capítulo de experimentación tiene como finalidad dar una idea de las estrategias seguidas en el desarrollo del software y de los resultados obtenidos en las mismas. El proceso de experimentación consiste en someter al software a una evaluación para comprobar que se comporta de acuerdo a las especificaciones y poder obtener conclusiones de su ejecución y sus resultados. La información obtenida en la experimentación ayudará a definir los parámetros idóneos para el algoritmo y de este modo mejorar su ejecución.
+	
+	\section{Configuración software y hardware}
+	
+		En esta sección se detalla la configuración software y hardware de la máquina donde se ejecutará la experimentación:\\
+		
+		\textbf{Software}
+		
+		\begin{itemize}
+			\item Sistema Operativo Ubuntu Server 10.04.2 LTS.
+			\item Matlab Version 7.8.0.347 (R2009a).
+		\end{itemize}
+		
+		\textbf{Hardware}
+		
+		\begin{itemize}
+			\item Microprocesadores Intel Xeon E5405 2.00GHz.
+			\item Memoria RAM 8 GB.
+		\end{itemize}
+	
+	\section{Condiciones de los experimentos}
+	
+		La aplicación de los experimentos se ha realizado de manera sistemática, procurando encontrar siempre los valores óptimos de los parámetros de configuración para resolver de la mejor forma posible los diversos problemas que puedan surgir. Para poder llevar a cabo dichos experimentos, es necesario establecer el diseño experimental de los mismo y utilizar un conjunto de bases de datos reales que permitan llevar a cabo las pruebas.\\
+	
+		\subsection{Diseño experimental}
+		
+			Para la cálculo del número de neuronas óptimo en la capa oculta se utilizará:
+			
+			\begin{description}
+				\item[k-fold:] Proceso de validación cruzada en el que el conjunto de datos se divide al azar en \textit{k} conjuntos de datos. De esos \textit{k} conjuntos de datos, uno es utilizado como datos de validación para testear el modelo, mientras que las restantes se usan como datos de entrenamiento. El proceso de validación cruzada es, entonces, repetido \textit{k} veces, usando cada vez un conjunto de datos diferente para cada validación. Los \textit{k} resultados obtenidos se combinan luego (normalmente mediante el cálculo de la media de la medida de rendimiento utilizada) para obtener una única estimación.
+			\end{description}
+			
+			Una vez obtenidos los resultados, se realiza un análisis indicando si concuerdan con los esperados e incluso si han superado las expectativas o el margen de error que se producido es menor. Para valorar los modelos obtenidos se utilizará, el ratio de patrones correctamente clasificados (CCR) y el error absoluto medio (MAE), explicados con anterioridad en el capítulo de Antecedentes.
+	
+	\section{Conjuntos de datos}
+		
+		Se ha llevado a cabo experimentos sobre 20 conjuntos de datos de dominio público. Estos conjuntos de datos presentan una buena diversidad respecto a diferentes características.\\
+		
+		Los conjuntos de datos se obtendrán de los proporcionados por el grupo de investigación, éstos se encontrarán divididos mediante un Hold-out en dos, un subconjunto de entrenamiento y otro de test, siendo el de entrenamiento mayor que el de test, aproximadamente un 75\% por ciento para entrenamiento y un 25\%.\\
+		
+		En la Tabla \ref{tab:datasets} se detallan las características de los conjuntos de datos empleados. Los atributos que se mostrarán en la tabla son, el nombre del conjunto de datos, número total de patrones de entrenamiento, el número total de patrones de test, el número de atributos y número de clases.\\
+		
+		\begin{table}[!h]
+				\centering
+				\begin{tabular}{l|c|c|c|c}
+					\hline \textbf{Nombre} & \textbf{N.T.P. Entrenamiento} & \textbf{N.T.P. Test} & \textbf{Núm. Atributos} & \textbf{Núm. Clases} \\ 
+					\hline Automobile & 1530 & 520 & 71 & 6 \\ 
+					\hline Balance Scale & 4680 & 1570 & 4 & 3 \\ 
+					\hline Bondrate & 420 & 150 & 37 & 5 \\ 
+					\hline Car & 12960 & 4320 & 21 & 4 \\ 
+					\hline Contact Lenses & 180 & 60 & 6 & 3 \\ 
+					\hline Depression & 1010 & 1320 & 7 & 3 \\ 
+					\hline ERA & 7500 & 2500 & 4 & 9 \\ 
+					\hline ESL & 3660 & 1220 & 4 & 9 \\ 
+					\hline Eucalyptus & 5520 & 1840 & 91 & 5 \\ 
+					\hline LEV & 7500 & 2500 & 4 & 5 \\ 
+					\hline New Thyroid & 1610 & 540 & 5 & 3 \\ 
+					\hline Pasture & 270 & 90 & 25 & 3 \\ 
+					\hline Squash Stored & 390 & 130 & 51 & 3 \\ 
+					\hline Squash Unstored & 390 & 130 & 52 & 3 \\ 
+					\hline SWD & 7500 & 2500 & 10 & 4 \\ 
+					\hline TAE & 1130 & 380 & 54 & 3 \\ 
+					\hline Thyroid & 54000 & 18000 & 21 & 3 \\ 
+					\hline Winequality Red & 11990 & 4000 & 11 & 6 \\ 
+					\hline Winequality White & 36730 & 12250 & 11 & 7 \\ 
+					\hline 
+				\end{tabular}
+				\caption{Conjuntos de datos usados.}
+				\label{tab:datasets}
+			\end{table}
+			
+			A continuación se hará una descripción de cada uno de los conjuntos de datos:
+			
+			\begin{itemize}
+				\item \textit{Automobile}: este conjunto de datos consiste en tres tipos de entidades: 1) la especificación de una automóvil en términos de varias características. 2) su clasificación de riesgo asignado inseguro, 3) sus pérdidas normalizadas en uso en comparación con otros coches. La segunda clasificación corresponde con el grado en el cual un automóvil tiene más riesgo del que su precio indica. Entonces, si es más arriesgado (o menos), ésto se ajusta por el movimiento hacia arriba (o hacia abajo) de la escala. A este proceso lo suelen llamar "simboling".\\
+
+El tercer factor es el pago relativo medio de pérdida por vehículos inseguros por año. Este valor está normalizado para todos los automóviles sin un tamaño particular en la clasificación (pequeño de dos puertas, furgonetas, deportivos, etc.) y representa la media de pérdidas por coche por año.
+				\item \textit{Balance Scale}: este conjunto de datos se generó a partir de los resultados de un modelo experimental psicológico. Cada ejemplo se clasifica como la punta de la balanza a la derecha, a la izquierda o balanceado. Los atributos son el peso de la punta izquierda, el de la derecha y la distancia correcta. El camino correcto para encontrar la clase es el mayor entre (distancia izquierda * peso izquierda) y (distancia derecha * peso derecha). Si son iguales, se encuentra balanceada.
+				\item \textit{Bondrate}: conjunto de datos basado en el rango de bondad que existe en datos de varias ciudades a partir de datos como el número de personas residentes, el rango de ingresos entrantes, etc.
+				\item \textit{Car}: el conjunto de datos de evaluación de coches se derivó desde un modelo simple de decisión jerárquico. Debido a la estructura conocida, este conjunto de datos puede ser particularmente útil para testeo de inducción constructiva y métodos de descubrimiento de estructuras.
+				\item \textit{Contact Lenses}: este conjunto de datos contiene 3 tipos de clases, la primera clase se refiere al paciente que debería llevar unas lentes de contacto duras, la segunda clase se refiere al paciente que debería de llevar unas lentes de contacto blandas y por último, la tercera clase sería que el paciente no debe de llevar lentes de contacto.
+				\item \textit{Depression}: conjunto de datos que contiene 3 tipos de clases, unidad espacial con depresión, unidad espacial sin depresión y unidad espacial donde no hay depresión. Este conjunto de datos proviene de casos reales obtenidos en Andalucía, al sur de España.
+				\item \textit{ERA}: el ECMWF ERA-40 Re-Analysis Project consiste en un número de conjuntos de datos climáticos que abarcan el periodo entre mediados de 1957 a agosto de 2002 usando un modelo consistente.
+				\item \textit{ESL}: el conjunto de datos ESL (Employee Selection) contiene perfiles de solicitantes de ciertos puestos de trabajo industriales. Expertos psicólogos de una compañía de reclutamiento, basándose en resultados de test psicométricos y entrevistas con los candidatos, determinaron los valores de los atributos de entrada. La salida es la clasificación general correspondiente a los grados de aptitud del candidato para ese tipo de trabajo.
+				\item \textit{Eucalyptus}: este conjunto de datos tiene como objetivo determinar qué lotes de semillas son mejores para la conservación del suelo en una región montañosa y en una estación seca. La determinación de ésto se haya mediante la medición de parámetros como la medición de la altura, diámetro por altura, supervivencia y otros factores contribuyentes.
+				\item \textit{LEV}: conjunto de datos que se usa para entrenamiento y simulación de redes neuronales.
+				\item \textit{New Thyroid}: este conjunto de datos esta reducido a partir de otro y provee resultados de clasificación del funcionamiento normal, hipoactivo o hiperactivo de la glándula tiroides en base a 5 atributos.
+				\item \textit{Pasture}: el conjunto de datos de producción de pastos tiene como objetivo predecir la producción de pasto mediante una variedad de factores biofísicos. Las variables de vegetación y suelo de las zonas de pastoreo de North Island, país montañoso el cual tiene diversas aplicaciones tales como aplicación de fertilizantes o paso con animales de carga.
+				\item \textit{Squash Stored}: este conjunto de datos tiene como objetivos determinar qué variables antes de la cosecha dan un buen sabor a la calabaza después de diversos periodos de tiempo almacenada. Esto se determina mediante una medida de aceptabilidad categorizada como aceptable, no aceptable o excelente.
+				\item \textit{Squash Unstored}: este conjunto de datos tiene como objetivos los mismo que el conjunto de datos anterior, la única diferencia es que en éste, el fruto no se almacena antes de medirse, por lo que carece de uno de los atributos, el peso de la fruta después de su almacenaje. 
+				\item \textit{SWD}: el conjunto de datos Social Workers Decisions (Ordinal SWD) contiene las evaluaciones del mundo real de trabajadores sociales cualificados en relación con el riesgo al que se enfrentan los niños si ellos se quedasen con sus familias en sus casas. Esta valoración de la evaluación de riesgos es, a menudo, presentada a las cortes judiciales para ayudar a decidir que es lo mejor para un niño que presuntamente padece abusos o está descuidado.
+				\item \textit{TAE}: el conjunto de datos Teaching Assistant Evaluation consiste en evaluaciones del desempeño docente sobre tres semestres regulares y dos semestres de verano de asistencia educacional asignada al Departamento de Estadística de la Universidad de Wisconsin (Madison). Las puntuaciones se dividieron en tres categorías de iguales tamaños (bajo (1), medio (2), alto (3)) para formar la variable de clases.
+				\item \textit{Thyroid}: este conjunto de datos es uno de las variadas bases de datos sobre Tiroides disponible en el repositorio de la UCI. La tarea que tiene es detectar si un paciente dado es normal (1) o sufre de hipertiroidismo (2) o de hipotiroidismo (3).
+				\item \textit{Winequality Red}: este conjunto de datos se encuentra relacionado a la variante roja del vino de Portuguese Vinho Verde. Debido a los problemas de privacidad y logística, solo las variables físico-químicas (entradas) y sensoriales (salidas) están disponibles. Este conjunto de datos se puede usar para tareas tanto de clasificación como de regresión. Las clases están ordenadas y no balanceadas.
+				\item \textit{Winequality White}: este conjunto de datos se encuentra relacionado a la variante blanca del vino de Portuguese Vinho Verde. Debido a los problemas de privacidad y logística, solo las variables físico-químicas (entradas) y sensoriales (salidas) están disponibles. Este conjunto de datos se puede usar para tareas tanto de clasificación como de regresión. Las clases están ordenadas y no balanceadas.
+			\end{itemize}
+			
+			El aprendizaje a partir de datos no balanceados, como son algunos de los conjuntos de datos utilizados, puede resultar dificultoso. Se dice que un conjunto de datos se encuentra no balanceado cuando presenta una desigualdad marcada en la distribución de las clases, es decir, que hay diferencias acusadas entre el número de ejemplos de las distintas clases. El problema surge porque, normalmente, los algoritmos de aprendizaje y clasificación en computación genética o evolutiva o mediante redes neuronales, que se usan para construir los clasificadores, tienden a centrarse en las clases mayoritarias y a pasar por alto las minoritarias. La consecuencia directa de este comportamiento es que el clasificador no será capaz de clasificar correctamente los ejemplos correspondientes a las clases menos frecuentes.\\
+			
+			La estrategia de aprendizaje no es la única cuestión que hay que afrontar cuando se trabaja con datos no balanceados. Otro punto fundamental es el de cómo medir la calidad de los clasificadores obtenidos. En clasificación, el rendimiento se suele medir en términos de la tasa de aciertos, es decir, la proporción de ejemplos correctamente clasificados o en términos de errores, ya sean medios o absolutos. \\
+			
+			El tamaño del conjunto de datos es hasta el momento el factor más relevante que limita la resolución de problemas de clasificación mediante este tipo de métodos debido a que el tiempo computacional requerido para clasificar grandes conjuntos de datos es excesivamente alto.
+		

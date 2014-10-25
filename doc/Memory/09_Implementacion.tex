@@ -1,0 +1,45 @@
+\chapter{Implementación}
+	
+	En este capítulo se detallarán aquellas particularidades para la implementación real del algoritmo de regresión ordinal y las redes neuronales. Para ello, se han seguido los manuales y tutoriales, además de las guías de referencia que el propio Matlab proporciona \cite{Matlab_ref,Matlab_nnet,Matlab_gui}.
+	
+	\section{Entrenamiento y Simulación}
+	
+		\textbf{Función osim}\\
+		
+		Esta función tiene como particularidades que hay que hacer un tratamiento de las salidas después de simular la red neuronal ordinal, es decir, hay que poner la última línea de resultados a 1 para que la probabilidad acumulada sea correcta en todos los casos alcanzando este valor. Después de este tratamiento, se hace uso de la función \textit{convoutputs} la cual realiza una conversión de las salidas para que se convierta de una salida con probabilidades acumuladas a una salida con resultados binarios, donde se pondrá un 1 cuando sea la clase con mayor probabilidad y un 0 en el resto.\\
+		
+		Se muestra el código parcial para que quede clara la implementación.\\
+		
+		\lstinputlisting[firstline=29, lastline=37, caption={Archivo osim.m}]{../src/nnet/@network/osim.m}
+		
+		\textbf{Función otrain}\\
+		
+		Esta función tiene como particularidad la llamada ajustada a la función de entrenamiento que se ha implementado en este proyecto y que posteriormente se mostrará con sus particularidades. Esta llamada se encuentra ajustada ya que los valores objetivos de la última entrada no hace falta tratarlos cuando se trate de una red neuronal ordinal.\\
+		
+		\lstinputlisting[firstline=31, lastline=32, caption={Archivo otrain.m}]{../src/nnet/@network/otrain.m}
+		
+	\section{Entrenamiento ordinal}
+		
+		\textbf{Función trainirpo}\\
+		
+		Esta función tiene las mayores peculiaridades en comparación con el resto, ya que es la que aplica la actualización y ajuste del algoritmo iRProp+ para redes neuronales ordinales. En la línea 15 se muestra el tratado especial que hay que tener para que las bias se analicen en un paso posterior y que los pesos no se modifiquen. A partir de la línea 21 se hace el nuevo procesado de los sesgos o \textit{bias}, ya que en este caso, las \textit{bias} hay que tratarlas para que se mantenga la condición, $b_1 < b_2 < \cdots < b_J-1$.\\
+		
+		\lstinputlisting[firstline=322, lastline=360, caption={Archivo trainirpo.m}]{../src/nnet/nntrain/trainirpo.m}
+		
+	\section{Creación de una red neuronal ordinal}
+	
+		\textbf{Función newoff}\\
+		
+		Esta función tiene bastantes peculiaridades ya que es de las más importantes al crear e inicializar la red neuronal artificial de forma ordinal. Desde la línea 3 hasta la 23 se muestra como, a partir de los parámetros de entrada, se crea la red neuronal con los parámetro ajustados y fijos necesarios para que se realice el proceso para una red neuronal ordinal. Entre los ajustes que se realizan, se pueden observar que las dos últimas capas son fijas, las funciones de transferencia para esas capas también lo son. Además, la función de entrenamiento es la comentada anteriormente y la función para la división inicial de los datos es una división estratificada y no la que vendría por defecto.\\
+		
+		Las líneas a partir de la 25 serían los ajustes posteriores a la creación de la red neuronal y que no se pueden establecer en el momento de la creación de la misma. Entre otros, se determina los pesos fijos que debe tener la última capa, la eliminación del sesgo intermedio, la inicialización de los \textit{bias} para que cumplan la condición que antes se ha comentado y los porcentajes de cada uno de los patrones para los conjuntos de entrenamiento, test y validación.\\
+		
+		\lstinputlisting[firstline=64, lastline=102, caption={Archivo newoff.m}]{../src/nnet/nnnetwork/newoff.m}
+		
+	\section{Cálculo del número óptimo de neuronas en la capa oculta}
+		
+		\textbf{Función kfoldo}\\
+		
+		Esta función tiene como peculiaridad la potencia que Matlab tiene para realizar cálculos y procesamiento de grandes operaciones computacionales. Para comenzar, se realiza una llamada a una de las funciones implementadas la cual obtiene las clases para un conjunto de datos, en la línea 3. Seguidamente, la función \textit{crossvalind} obtiene los índices de una forma semialeatoria realizando un K-Fold\footnote{Método explicado en el capítulo de Experimentación.}. A partir de esos índices, se definen los nuevos conjuntos de datos de entrenamiento y, de este modo, realizar, un número determinado de veces, la creación, entrenamiento y simulación de la red neuronal para posteriormente obtener los datos de las salidas y poder calcular la matriz de confusión. A partir de la matriz de confusión y realizando la media del número determinado de ejecuciones del mismo, se obtendrá el \textit{MAE}. Para determinar el número de neuronas en capa oculta se seleccionará aquel número que conforme modelos que proporcionan un menor \textit{MAE}.\\
+		
+		\lstinputlisting[firstline=38, caption={Archivo kfoldo.m}]{../src/nnet/nnother/kfoldo.m}
