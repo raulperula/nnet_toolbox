@@ -18,4 +18,4 @@ Text and source code in Spanish.
 Raúl Pérula-Martínez<br>
 Computer Engineer<br>
 University of Cordoba (Spain)<br>
-More information: http://educatech.sytes.net/raul/doku.php?id=nn_ordinal_regresion
+More information: http://raulperula.github.io/
